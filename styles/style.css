@@ -4,25 +4,30 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* index pag */
+
 .geral{
     height: 100vh;
     width: 100vw;
-
     background-color: #FFFFF0;
+
+    display: grid;
+    grid-template-rows: auto auto;
 }
 
 .top-div{
-    height: 15rem;
-    
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-img{
-    margin-top: 3rem;
+.logo-img{
+  width: 95%;
+  margin-top: 3rem;
 }
 
 .bottom-div{
-    height: 28rem;
+    width: 100vw;
     background-color: #5F9EA0;
 
     display: flex;
@@ -36,7 +41,7 @@ ul{
     list-style: none;
 }
 
-a{
+button{
     width: 340px;
     height: 62px;
     background-color: #FFFFF0;
@@ -51,4 +56,10 @@ button:hover{
 
 .entrar-button{
     margin-bottom: 64px;
+}
+
+/* pagina de entrar */
+
+.entrar-pag .geral{
+  background-color: #5F9EA0;
 }
