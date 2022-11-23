@@ -1,5 +1,5 @@
 .div1 {
-    color: black;
+    color: gray;
     font-size: 10px;
     height: 100px;
     
@@ -7,7 +7,7 @@
     position: center;
 }
 .div2 {
-    color: black;
+    color: gray;
     font-size: 10px;
     height: 150px;
     
@@ -15,7 +15,7 @@
     position: right;
 }
 .div3 {
-    color: black;
+    color: gray;
     font-size: 10px;
     height: 150px;
     
