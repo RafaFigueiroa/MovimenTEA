@@ -9,14 +9,14 @@ body{
 }
 
 .geral{
-    height: 750px;
+    height: 751px;
     width: 350px;
     background-color: #5F9EA0;
 
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-49%, -50%);
     
     display: flex;
     align-items: center;
