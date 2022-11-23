@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovimenTEA</title>
+
+    <link rel="stylesheet" href="../styles/style.avaliacao.css">
+
+    <style>
+        .popup-comunicacao{
+        position: fixed;
+        top: 0; bottom: 0;
+        left: 0; right: 0;
+
+        margin: auto;
+        width: 300px;
+        height: 180px;
+        padding: 15px;
+        border: solid 1px #4c4d4f;
+        background-color: #f5812a;
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="geral">
+        <header>
+            <a href="select-perfil.html"><img src="" alt=""></a>
+            <ul>
+                <li>Fernanda Coelho Moraes</li>
+                <li>10 anos</li>
+            </ul>
+            <img src="" alt="">
+        </header>
+        <div class="center">
+            <h2>Gráficos da avaliação</h2>
+            <div class="avaliacoes">
+                <div class="comunicacao">
+                    <div class="grafico">
+                        <circle></circle>
+                    </div>
+                    <div class="edit">
+                        <h3>Comunicação</h3>
+                        <a href="javascript: abrir();">Editar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-comunicacao"></div>
+    </div>
+
+    <script type="text/javascript">
+        function abrir(){
+            document.getElementsByClassName('popup-comunicacao').style.display = 'block';
+        }
+
+        function fechar(){
+            document.getElementById('popup-comunicacao').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

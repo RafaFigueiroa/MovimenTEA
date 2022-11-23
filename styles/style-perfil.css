@@ -4,13 +4,110 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.sombra1{
-    position: absolute;
-    z-index: -1;
+body{
+    background-color: #000000;
 }
 
-.sombra2{
+.geral{
+    height: 750px;
+    width: 350px;
+    background-color: #ffffff;
+
     position: absolute;
-    z-index: -2;
-    top: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-rows: 10% 35% 15% 40%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav .icon-seta{
+    margin-left: 1rem;
+    margin-right: 225px;
+}
+
+.perfil{
+    display: grid;
+    grid-template-rows: 20% 40% 40% 20%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.img-perfil{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #5F9EA0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.descricao-perfil{
+    background-color: #ffffff;
+    width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    border-radius: 10px;
+    border: 2px solid #5F9EA0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.icon-perfil{
+    width: 24px;
+    height: 24px;
+    margin: 0 0.5rem;
+}
+
+.descricao-perfil ul{
+    list-style: none;
+}
+
+.insignias h3{
+    margin-left: 1rem;
+    font-size: 24px;
+}
+
+.insignias-imgs{
+    background-color: #5f9ea080;
+    padding-left: 1rem;
+}
+
+.funcao{
+    width: 300px;
+    height: 55px;
+    background-color: #5F9EA0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.funcao img{
+    margin: 1rem;
+}
+
+.nome-funcao{
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    margin-left: 1rem;
 }
