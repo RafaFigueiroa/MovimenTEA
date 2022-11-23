@@ -5,7 +5,7 @@ squad 9
 - Rafael Martins
 - Edson Silva
 - Gabriel Lins
-- Gbariel Severino
+- Gabriel Severino
 - Ester Vitoria
 - Tereza Maia
 - Maria Clara
