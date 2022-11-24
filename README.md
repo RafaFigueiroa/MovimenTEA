@@ -11,6 +11,4 @@ squad 9
 - Maria Clara
 - João Morais
 
-
-teste teste
-teste
+teste 2
