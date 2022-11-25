@@ -7,7 +7,7 @@ squad 9
 - Gabriel Lins
 - Gabriel Severino
 - Ester Vitoria
-- Tereza Maia
+- Tereza Raquel Maia
 - Maria Clara
 - João Morais
 
