@@ -7,59 +7,159 @@
     <title>MovimenTEA</title>
 
     <link rel="stylesheet" href="../styles/style.avaliacao.css">
-
-    <style>
-        .popup-comunicacao{
-        position: fixed;
-        top: 0; bottom: 0;
-        left: 0; right: 0;
-
-        margin: auto;
-        width: 300px;
-        height: 180px;
-        padding: 15px;
-        border: solid 1px #4c4d4f;
-        background-color: #f5812a;
-        display: none;
-        }
-    </style>
 </head>
 <body>
     <div class="geral">
         <header>
-            <a href="select-perfil.html"><img src="" alt=""></a>
+            <a href="select-perfil.html"><img src="../images/pag-avaliacao/arrowsquareleft2.png" alt=""></a>
             <ul>
                 <li>Fernanda Coelho Maia</li>
                 <li>11 anos</li>
             </ul>
-            <img src="" alt="">
+            <img src="../images/pag-avaliacao/Group 254.png" alt="">
         </header>
         <div class="center">
             <h2>Gráficos da avaliação</h2>
             <div class="avaliacoes">
-                <div class="comunicacao">
-                    <div class="grafico">
-                        <circle></circle>
+                <div class="avaliacao comunicacao">
+                    <div class="box-circle" height="150px" width="150px" background-color="#5F9EA0">
+                        <svg>
+                            <circle cx="65" cy="65" r="35"></circle>
+                            <circle id="circleProgress" cx="65" cy="65" r="35"></circle>
+                        </svg>
+                        <div class="number">0%</div>
                     </div>
                     <div class="edit">
+                        <div><h3>Comunicação</h3></div>
+                        <a href="javascript: abrirComunicacao();">EDITAR</a>
+                    </div>   
+                    <div class="popup">
+                        <h2>Editar evolução</h2>
                         <h3>Comunicação</h3>
-                        <a href="javascript: abrir();">Editar</a>
+                        
+                        <input id="numberProgress" type="number" placeholder="Digite um número">
+                        <button onclick="goComunicacao(), fecharComunicacao()">Enviar</button>
+                
+                        <a href="javascript: fecharComunicacao();">x</a>			
+                    </div>
+                </div>
+                <div class="avaliacao psicomotor">
+                    <div class="box-circle" height="150px" width="150px" background-color="#5F9EA0">
+                        <svg>
+                            <circle cx="65" cy="65" r="35"></circle>
+                            <circle id="circleProgress" cx="65" cy="65" r="35"></circle>
+                        </svg>
+                        <div class="number">0%</div>
+                    </div>
+                    <div class="edit">
+                        <div><h3>Psicomotor</h3></div>
+                        <a href="javascript: abrirPsicomotor();">EDITAR</a>
+                    </div>   
+                    <div class="popup">
+                        <h2>Editar evolução</h2>
+                        <h3>Psicomotor</h3>
+                        
+                        <input id="numberProgress" type="number" placeholder="Digite um número">
+                        <button onclick="goPsicomotor(), fecharPsicomotor()">Enviar</button>
+                
+                        <a href="javascript: fecharPsicomotor();">x</a>			
+                    </div>
+                </div>
+                <div class="avaliacao mobilidade">
+                    <div class="box-circle" height="150px" width="150px" background-color="#5F9EA0">
+                        <svg>
+                            <circle cx="65" cy="65" r="35"></circle>
+                            <circle id="circleProgress" cx="65" cy="65" r="35"></circle>
+                        </svg>
+                        <div class="number">0%</div>
+                    </div>
+                    <div class="edit">
+                        <div><h3>Mobilidade</h3></div>
+                        <a href="javascript: abrirMobilidade();">EDITAR</a>
+                    </div>   
+                    <div class="popup">
+                        <h2>Editar evolução</h2>
+                        <h3>Mobilidade</h3>
+                        
+                        <input id="numberProgress" type="number" placeholder="Digite um número">
+                        <button onclick="goMobilidade(), fecharMobilidade()">Enviar</button>
+                
+                        <a href="javascript: fecharMobilidade();">x</a>			
+                    </div>
+                </div>
+                <div class="avaliacao independencia">
+                    <div class="box-circle" height="150px" width="150px" background-color="#5F9EA0">
+                        <svg>
+                            <circle cx="65" cy="65" r="35"></circle>
+                            <circle id="circleProgress" cx="65" cy="65" r="35"></circle>
+                        </svg>
+                        <div class="number">0%</div>
+                    </div>
+                    <div class="edit">
+                        <div><h3>Independência</h3></div>
+                        <a href="javascript: abrirIndependencia();">EDITAR</a>
+                    </div>   
+                    <div class="popup">
+                        <h2>Editar evolução</h2>
+                        <h3>Independência</h3>
+                        
+                        <input id="numberProgress" type="number" placeholder="Digite um número">
+                        <button onclick="goIndependencia(), fecharIndependencia()">Enviar</button>
+                
+                        <a href="javascript: fecharIndependencia();">x</a>			
+                    </div>
+                </div>
+                <div class="avaliacao concentracao">
+                    <div class="box-circle" height="150px" width="150px" background-color="#5F9EA0">
+                        <svg>
+                            <circle cx="65" cy="65" r="35"></circle>
+                            <circle id="circleProgress" cx="65" cy="65" r="35"></circle>
+                        </svg>
+                        <div class="number">0%</div>
+                    </div>
+                    <div class="edit">
+                        <div><h3>Concentração</h3></div>
+                        <a href="javascript: abrirConcentracao();">EDITAR</a>
+                    </div>   
+                    <div class="popup">
+                        <h2>Editar evolução</h2>
+                        <h3>Concentração</h3>
+                        
+                        <input id="numberProgress" type="number" placeholder="Digite um número">
+                        <button onclick="goConcentracao(), fecharConcentracao()">Enviar</button>
+                
+                        <a href="javascript: fecharConcentracao();">x</a>			
+                    </div>
+                </div>
+                <div class="avaliacao estresse">
+                    <div class="box-circle" height="150px" width="150px" background-color="#5F9EA0">
+                        <svg>
+                            <circle cx="65" cy="65" r="35"></circle>
+                            <circle id="circleProgress" cx="65" cy="65" r="35"></circle>
+                        </svg>
+                        <div class="number">0%</div>
+                    </div>
+                    <div class="edit">
+                        <div><h3>Estresse</h3></div>
+                        <a href="javascript: abrirEstresse();">EDITAR</a>
+                    </div>   
+                    <div class="popup">
+                        <h2>Editar evolução</h2>
+                        <h3>Estresse</h3>
+                        
+                        <input id="numberProgress" type="number" placeholder="Digite um número">
+                        <button onclick="goEstresse(), fecharEstresse()">Enviar</button>
+                
+                        <a href="javascript: fecharEstresse();">x</a>			
                     </div>
                 </div>
             </div>
+
+            
         </div>
-        <div class="popup-comunicacao"></div>
-    </div>
-
-    <script type="text/javascript">
-        function abrir(){
-            document.getElementsByClassName('popup-comunicacao').style.display = 'block';
-        }
-
-        function fechar(){
-            document.getElementById('popup-comunicacao').style.display = 'none';
-        }
-    </script>
+        
+    </div>  
+    <script src="../scripts/script.js" type="text/javascript"></script>
 </body>
 
 </html>

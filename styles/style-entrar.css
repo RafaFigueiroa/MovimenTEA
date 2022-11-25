@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins','Segoe UI', Verdana, sans-serif;
 }
 
 body{
@@ -11,21 +13,18 @@ body{
 .geral{
     height: 750px;
     width: 350px;
-    background-color: #5F9EA0;
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    
+    background-color: #5F9EA0;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: 40% 60%;
 }
 
 
-.top-div{
-    position: relative;
-
+.logo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,50 +32,20 @@ body{
 
 .logo-img{
     width: 95%;
-    margin-top: 3rem;
 }
 
-.bottom-div{
-    position: relative;
-
-    width: 350px;
-    background-color: #5F9EA0;
-
-    display: flex;
-    justify-content: center;
+.form{
+    display: grid;
+    grid-template-rows: auto auto auto;
     align-items: center;
-
-    border-radius: 60px 60px 0 0;
+    justify-content: center;
 }
 
 ul{
     list-style: none;
 }
 
-button{
-    width: 340px;
-    height: 62px;
-    background-color: #FFFFF0;
-    border: none;
-    border-radius: 40px;
-    font-size: 40px;
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-button:hover{
-    background-color: #fafa45;
-}
-  
-.entrar-pag button{
-    width: 170px;
-    height: 40px;
-    font-size: 30px; 
-}
-  
-.entrar-pag .bottom-div{
-    padding-bottom: 10rem;
-}
   
 .input-div{
     width: 330px;
@@ -101,6 +70,8 @@ button:hover{
 input{
     background-color: transparent;
     border: none;
+    width: 280px;
+    font-size: 15px;
 }
   
 input::-webkit-input-placeholder{
@@ -116,80 +87,75 @@ input::-webkit-input-placeholder{
 a{
     text-decoration: none;
     color: #000000;
+    transition: 0.2s;
+}
+
+.div-a a:hover{
+    color: #434343;
 }
   
 .li-enviar-button{
     display: flex;
     justify-content: center;
-.div1 {
-    color: black;
-    font-size: 10px;
-    height: 100px;
-    
-    background-color: rgb(95, 158, 160);
-    position: center;
-}
-.div2 {
-    color: black;
-    font-size: 10px;
-    height: 150px;
-    
-    background-color: rgb(255, 255, 240);
-    position: right;
-}
-.div3 {
-    color: black;
-    font-size: 10px;
-    height: 150px;
-    
-    background-color: rgb(255, 255, 240);
-    position: right;
-}
-.div4 {
-    color: black;
-    font-size: 10px;
-    height: 150px;
-    
-    background-color:rgb(255, 255, 240);
-    position: right;
-}
-.div4 {
-    color: black;
-    font-size: 10px;
-    height: 150px;
-    
-    background-color:rgb(255, 255, 240);
-    position: right;
-}
-.div5 {
-    color: black;
-    font-size: 10px;
-    height: 150px;
-    
-    background-color:rgb(255, 255, 240);
-    position: right;
 }
 
-button {
-    all: unset;
+.button1{
+    width: 170px;
+    height: 40px;
+    background-color: #FFFFF0;
+    border: none;
+    border-radius: 40px;
+    font-size: 28px;
+
     cursor: pointer;
-    outline: revert;
-  }
 
-  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-.geral{
-    height: 750px;
-    width: 350px;
-    background-color: #5F9EA0;
+    transition: 0.2s;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    display: grid;
-    grid-template-rows: auto auto;
-
+    display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.button1:hover{
+    background-color: #c6c6bc;
+}
+
+.button2{
+    width: 300px;
+    height: 38px;
+    background-color: transparent;
+    border: solid 1px #000000;
+    border-radius: 5px;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    transition: 0.2s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+    margin-left: 12px;
+
+    transition: 0.2s;
+}
+
+.button2 img{
+    height: 25px;
+    width: 25px;
+    margin: 0 10px;
+}
+
+.button2 p{
+    margin-right: 35px;
+}
+
+.button2:hover{
+    background-color: #0000002c;
 }

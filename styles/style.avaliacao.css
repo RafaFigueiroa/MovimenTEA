@@ -1,13 +1,138 @@
-.popup-comunicacao{
-    position: fixed;
-    top: 0; bottom: 0;
-    left: 0; right: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins','Segoe UI', Verdana, sans-serif;
+}
+
+body{
+    background-color: #000000;
+}
+
+.geral{
+    height: 751px;
+    width: 350px;
+    background-color: #FFFFF0;
+    background-image: url(../images/pag-avaliacao/bg-avaliacao.png);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-rows: 14% 85%;
+    align-items: center flex-start;
+}
+
+header{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+header ul li{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 16px;
+}
+
+.center h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+.avaliacoes{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.avaliacao{
+    height: 130px;
+    width: 130px;
+    background-color: #5F9EA0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.box-circle{
+    position: relative;
+    height: 130px;
+}
+
+circle{
+    width: 70px;
+    height: 70px;
+    fill: none;
+    stroke: #000000;
+    stroke-width: 20px;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+}
+
+circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #8484848a;
+}
+
+circle:nth-child(2){
+    stroke: #D9D9D9;
+    transition: stroke-dashoffset 0.5s;
+}
+
+.number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.edit{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    background-color: #5f9ea080;
+    border-radius: 10px;
+    margin-top: 5px;    
+}
+
+.edit div{
+    background-color: #F1915D;
+    width: 92px;
+    padding: 5px 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.edit a{
+    text-decoration: none;
+    margin-left: 2px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.popup{
+    position: fixed;
+    top: 0; bottom: 0; 
+    left: 0; right:0;
     margin: auto;
     width: 300px;
     height: 180px;
     padding: 15px;
     border: solid 1px #4c4d4f;
-    background-color: #f5812a;
+    background: #3A7F78;
     display: none;
+    z-index: 1;
 }

@@ -1,0 +1,88 @@
+body{
+    background-color: #000000;
+}
+
+.geral{
+    height: 750px;
+    width: 350px;
+    background-color: #ffffff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div1 {
+    color: gray;
+    font-size: 10px;
+    height: 100px;
+    
+    background-color: rgb(95, 158, 160);
+    position: center;
+}
+.div2 {
+    color: gray;
+    font-size: 10px;
+    height: 150px;
+    
+    background-color: rgb(255, 255, 240);
+    position: right;
+}
+.div3 {
+    color: gray;
+    font-size: 10px;
+    height: 150px;
+    
+    background-color: rgb(255, 255, 240);
+    position: right;
+}
+.div4 {
+    color: gray;
+    font-size: 10px;
+    height: 150px;
+    
+    background-color:rgb(255, 255, 240);
+    position: right;
+}
+.div5 {
+    color: black;
+    font-size: 10px;
+    height: 150px;
+    
+    background-color:rgb(255, 255, 240);
+    position: right;
+}
+
+img{
+    padding: 0;
+    margin-left: 0;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+    outline: revert;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 1rem;
+}
+
+.geral{
+    height: 750px;
+    width: 350px;
+    background-color: #5F9EA0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-rows: auto auto;
+
+    align-items: center;
+}
