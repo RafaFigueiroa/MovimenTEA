@@ -1,4 +1,13 @@
 # MovimenTEA
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- HTML e CSS
+- JavaScript 
+- Git e Github
+
 squad 9 
 - Brenno Henrique
 - Carolyna Costa
@@ -7,8 +16,8 @@ squad 9
 - Gabriel Lins
 - Gabriel Severino
 - Ester Vitoria
-- Tereza Maia
+- Tereza Raquel Maia
 - Maria Clara
 - João Morais
 
-teste 2
+Teste {2}

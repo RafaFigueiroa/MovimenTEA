@@ -62,3 +62,17 @@ button{
 button:hover{
     background-color: rgba(181, 181, 181, 0.5);
 }
+
+.perfis{
+    animation: appear 0.7s forwards;
+}
+
+@keyframes appear{
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+}
