@@ -1,27 +1,92 @@
-.div1 {
-    height: 50px;
-    background-color: rgb(255, 255, 240);
- 
-}
-.div2 {
-    height: 100px;
-    background-color: rgb(255, 255, 240);
- 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins','Segoe UI', Verdana, sans-serif;
 }
 
-.div3 {
-    height: 700px;
-    background-color: rgb(255, 255, 240);
- 
+body{
+    background-color: #000000;
 }
-.div4 {
-    width: 100%;
-    height: 120px;
-    background-color: rgb(95, 158, 160);
- 
+
+.geral{
+    height: 750px;
+    width: 350px;
+    background-color: #fffff0;
+    background-image: url(../images/pag-menu/Group2588.png);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-rows: 14% 15% 60% 11%;
+    align-items: center flex-start center center;
 }
-button {
-    all: unset;
-    cursor: pointer;
-    outline: revert;
-  }
+
+header{
+    padding: 24px;
+}
+
+.rotina{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rotina img{
+    width: 250px;
+}
+
+.buttons{
+    position: relative;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.buttons a{
+    height: 65px;
+    width: 65px;
+}
+
+.buttons a img{
+    height: 65px;
+    width: 65px;
+}
+
+#calendario{
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+#stats{
+    position: absolute;
+    top: 80px;
+    left: 150px;
+}
+#gym{
+    position: absolute;
+    top: 200px;
+    left: 170px;
+}
+#ball{
+    position: absolute;
+    top: 330px;
+    left: 100px;
+}
+
+.rodape{
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.rodape a{
+    margin-right: 50px;
+}
+
+.rodape .perfil{
+    width: 85px;
+}
