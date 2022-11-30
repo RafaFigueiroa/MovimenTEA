@@ -99,6 +99,7 @@ circle:nth-child(2){
 }
 
 .edit{
+    position: absolute;
     display: flex;
     align-items: center;
     font-size: 10px;
@@ -124,15 +125,46 @@ circle:nth-child(2){
 }
 
 .popup{
-    position: fixed;
-    top: 0; bottom: 0; 
-    left: 0; right:0;
-    margin: auto;
-    width: 300px;
-    height: 180px;
-    padding: 15px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 140px;
     border: solid 1px #4c4d4f;
     background: #3A7F78;
-    display: none;
     z-index: 1;
+
+    display: none;
+}
+
+.popup h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+#numberProgress{
+    height: 35px;
+    width: 225px;
+
+    border: none;
+    border-radius: 5px;
+}
+
+#numberProgress::-webkit-input-placeholder{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+#numberProgress::-webkit-scrollbar-button{
+    display: none;
+}
+
+.popup button{
+    background-color: #55B0A5;
+    height: 25px;
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
 }
