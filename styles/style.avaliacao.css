@@ -75,8 +75,8 @@ circle{
     fill: none;
     stroke: #000000;
     stroke-width: 20px;
-    stroke-dasharray: 283;
-    stroke-dashoffset: 283;
+    stroke-dasharray: 220;
+    stroke-dashoffset: 220;
 }
 
 circle:nth-child(1){
@@ -128,43 +128,96 @@ circle:nth-child(2){
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    width: 280px;
-    height: 140px;
-    border: solid 1px #4c4d4f;
-    background: #3A7F78;
     z-index: 1;
 
+    width: 300px;
+    height: 120px;
+    background: #3A7F78;
+    box-shadow: 0px 4px 4px #00000080;
+    
+    border-radius: 15px;
+
     display: none;
+}
+
+.popup h2{
+    margin: 7px 16px -5px;
 }
 
 .popup h3{
     font-size: 16px;
     font-weight: 600;
-    margin-left: 16px;
+    margin: 0px 16px 10px;
 }
 
 #numberProgress{
     height: 35px;
-    width: 225px;
+    width: 180px;
+    padding: 0 5px;
+    margin: 0px 10px 5px 16px;
 
     border: none;
     border-radius: 5px;
 }
 
 #numberProgress::-webkit-input-placeholder{
-    font-size: 15px;
-    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.36);
 }
 
-#numberProgress::-webkit-scrollbar-button{
-    display: none;
+#numberProgress::-webkit-outer-spin-button,
+#numberProgress::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#numberProgress:focus{
+    border: none;
+    box-shadow: 0 0 4px #00000080;
+    outline-offset: 0px;
+    outline: none;
 }
 
 .popup button{
     background-color: #55B0A5;
     height: 25px;
     width: 60px;
+
     border: none;
     border-radius: 5px;
+
     font-size: 14px;
+    font-weight: 500;
+
+    box-shadow: 0px 3px 3px #00000080;
+    transition: 0.3s;
+}
+
+.popup button:hover{
+    background-color: #5F9EA0;
+}
+
+.popup a{
+    position: absolute;
+    top: 20px; right: 20px;
+
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+
+    text-decoration: none;
+    font-weight: 800;
+    color: #000000;
+
+    background-color: #55B0A5;
+    padding: 3px;
+    border-radius: 100%;
+
+    transition: 0.3s;
+}
+
+.popup a:hover{
+    background-color: #5F9EA0;
 }

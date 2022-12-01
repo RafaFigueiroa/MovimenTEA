@@ -22,12 +22,20 @@ body{
     transform: translate(-50%, -50%);
 
     display: grid;
-    grid-template-rows: 14% 15% 60% 11%;
+    grid-template-rows: 10% 19% 60% 11%;
     align-items: center flex-start center center;
 }
 
 header{
-    padding: 24px;
+    padding: 15px 0px 20px 20px;
+}
+
+header a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .rotina{
@@ -37,7 +45,7 @@ header{
 }
 
 .rotina img{
-    width: 250px;
+    width: 280px;
 }
 
 .buttons{

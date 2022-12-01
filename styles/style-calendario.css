@@ -1,16 +1,48 @@
-{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
     padding: 0;
     margin: 0;
-    font-family: 'Lato', sans-serif 
+    font-family: 'Poppins','Segoe UI', Verdana, sans-serif;
 }
 
 body{
-    background: #5F9EA0;
+    background-color: #000000;
+}
+
+.geral{
+    height: 46.875rem;
+    width: 21.875rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: #5F9EA0;
+}
+
+.voltar{
+    position: absolute;
+    z-index: 1;
+    top: 16px; left: 16px;
+    height: 50px;
+    width: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.voltar img{
+    height: 50px;
+    width: 50px;
 }
 
 .conteudo{
     background: #5F9EA0;
-    width: 375px;
+    width: 350px;
     height:80%;
     display:block;
     
@@ -31,31 +63,12 @@ h2{
     text-transform: uppercase;
 }
 
-.btn-ant,.btn-pro{
-    position: absolute;
-    top: 50%; 
-    height: 32px;
-    width: 32px;
-    line-height: 32px;
-    margin-top: -16px;
-    border: 2px solid #cbd1d2;
-    border-radius: 50%;
-    color: #cbd1d2 ;
-    font-size: 16px;
-    font-weight: bold;
-}
-
 .btn-ant{
     left: 80px;
 }
 
 .btn-pro{
     right:80px;
-}
-
-.btn-ant:hover ,.btn-pro:hover {
-    background: #cbd1d2;
-    color: #f9f9f9;
 }
 
 .calendairo table{
