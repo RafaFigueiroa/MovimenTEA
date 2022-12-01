@@ -19,7 +19,6 @@ body{
     transform: translate(-50%, -50%);
     
     background-color: #5F9EA0;
-<<<<<<< HEAD
 }
 
 .voltar{
@@ -39,8 +38,6 @@ body{
 .voltar img{
     height: 50px;
     width: 50px;
-=======
->>>>>>> c416ad14f479ebcaf405f0b69a3c37399814753a
 }
 
 .conteudo{
@@ -66,18 +63,6 @@ h2{
     text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-=======
-.btn-ant,.btn-pro{
-    position: absolute;
-    top: 16px;
-    left: 16px; 
-    height: 25px;
-    width: 25px;
-    line-height: 32px;
-}
-
->>>>>>> c416ad14f479ebcaf405f0b69a3c37399814753a
 .btn-ant{
     left: 80px;
 }
